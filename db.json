@@ -1,0 +1,76 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Men's Casual T-Shirt",
+      "price": 599,
+      "category": "men",
+      "image": "https://m.media-amazon.com/images/I/71njqjSdKSL._SY879_.jpg",
+      "description": "Comfortable cotton casual t-shirt"
+    },
+    {
+      "id": 2,
+      "title": "Women's Summer Dress",
+      "price": 999,
+      "category": "women",
+      "image": "https://m.media-amazon.com/images/I/619uN+zGB7L._SY741_.jpg",
+      "description": "Lightweight summer dress"
+    },
+    {
+      "id": 3,
+      "title": "Running Shoes",
+      "price": 1499,
+      "category": "shoes",
+      "image": "https://m.media-amazon.com/images/I/71074fZToFL._SY695_.jpg",
+      "description": "Comfortable shoes for everyday running"
+    },
+    {
+      "id": 4,
+      "title": "Men's Casual T-Shirt",
+      "price": 699,
+      "category": "men",
+      "image": "https://m.media-amazon.com/images/I/61WYx598KKL._SY879_.jpg",
+      "description": "Stylish casual t-shirt"
+    },
+    {
+      "id": 5,
+      "title": "Women's Summer Dress",
+      "price": 1299,
+      "category": "women",
+      "image": "https://m.media-amazon.com/images/I/615N16bV18L._SY879_.jpg",
+      "description": "Beautiful summer dress"
+    },
+    {
+      "id": 6,
+      "title": "Running Shoes",
+      "price": 1799,
+      "category": "shoes",
+      "image": "https://m.media-amazon.com/images/I/71p+nOIG4wL._SY695_.jpg",
+      "description": "Lightweight shoes for running"
+    },
+    {
+      "id": 7,
+      "title": "Men's Casual T-Shirt",
+      "price": 799,
+      "category": "men",
+      "image": "https://m.media-amazon.com/images/I/61ND9d9vEtL._SY879_.jpg",
+      "description": "Premium cotton t-shirt"
+    },
+    {
+      "id": 8,
+      "title": "Women's Summer Dress",
+      "price": 1099,
+      "category": "women",
+      "image": "https://m.media-amazon.com/images/I/81F+mWULwSL._SY879_.jpg",
+      "description": "Fashionable summer dress"
+    },
+    {
+      "id": 9,
+      "title": "Running Shoes",
+      "price": 1999,
+      "category": "shoes",
+      "image": "https://images.meesho.com/images/products/1020263736/ld3sr_512.avif?width=512",
+      "description": "Durable everyday running shoes"
+    }
+  ]
+}
