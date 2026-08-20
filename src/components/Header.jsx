@@ -2,15 +2,28 @@ import { useEffect, useState } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import { useSelector } from "react-redux";
-import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { Link, useNavigate } from "react-router-dom";
+import { signOut } from "firebase/auth";
+import { auth } from "../utils/firebase";
 
 const Header = () => {
+  const navigate = useNavigate();
   const [scrolled, setScrolled] = useState(false);
 
   // Subscribing to the store using selector
   const cartItems = useSelector((store) => store.cart.items);
   console.log(cartItems);
+
+  const handleSignOut = () => {
+    signOut(auth)
+      .then(() => {
+        navigate("/login");
+      })
+      .catch((error) => {
+        navigate("/error");
+      });
+  };
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 60);
@@ -34,6 +47,7 @@ const Header = () => {
           <Nav.Link as={Link} to="/cart">
             Cart 🛒 {cartItems.length}
           </Nav.Link>
+          <button onClick={handleSignOut}>Sign Out</button>
         </Nav>
       </Container>
     </Navbar>

@@ -8,8 +8,8 @@ const Cart = () => {
 
   const total = cartItems.reduce((sum, item) => sum + item.price, 0);
 
-  const handleRemoveItem = () => {
-    dispatch(removeItems());
+  const handleRemoveItem = (itemId) => {
+    dispatch(removeItems(itemId));
   };
 
   const handleClearCart = () => {
@@ -39,7 +39,7 @@ const Cart = () => {
             </div>
 
             <span className="cart-item-price">₹{item.price}</span>
-            <button onClick={handleRemoveItem}>Remove</button>
+            <button onClick={() => handleRemoveItem(item.id)}>Remove</button>
           </div>
         );
       })}
