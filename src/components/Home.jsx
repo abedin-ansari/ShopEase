@@ -1,17 +1,10 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
 import HeroCarousel from "./HeroCarousel";
 import ProductCard from "./ProductCard";
 import Footer from "./Footer";
+import productData from "../../db.json";
 
 const Home = () => {
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-    axios
-      .get("http://localhost:3000/products")
-      .then((res) => setProducts(res.data || []));
-  }, []);
+  const products = productData.products || [];
 
   return (
     <>
