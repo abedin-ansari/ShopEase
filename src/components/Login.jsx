@@ -41,6 +41,7 @@ const Login = () => {
         .then((userCredential) => {
           // Signed up
           const user = userCredential.user;
+          navigate("/");
 
           updateProfile(auth.currentUser, {
             displayName: name.current.value,
@@ -50,7 +51,6 @@ const Login = () => {
               dispatch(
                 addUser({ uid: uid, email: email, displayName: displayName }),
               );
-              navigate("/");
             })
             .catch((error) => {
               setErrorMessage(error.message);
